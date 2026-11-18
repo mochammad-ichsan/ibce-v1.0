@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Provisional software citation for researcher review. Confirm the complete author list before publication; this is not a published-paper citation."
+type: software
+title: "IBCE: Integrative Breast Cancer Evidence Explorer"
+authors:
+  - family-names: "Ichsan"
+    given-names: "Mochammad"
+repository-code: "https://github.com/mochammad-ichsan/ibce-v1.0"
+url: "https://ichsan.ibios.org"
+license: "PolyForm-Noncommercial-1.0.0"
+abstract: "Selected source for breast-cancer evidence exploration. Researcher-led, AI-assisted scientific software development. Source-only host-dependent snapshot, not a standalone application or clinical tool. Portfolio v1.1.1 denotes documentation, not a software release. Complete authorship and structured name fields remain subject to researcher review."

@@ -1,0 +1,19 @@
+{
+  "captured_at_utc": "2026-11-18T10:26:08.637Z",
+  "route": "/ibios-tools/ibce",
+  "file": "docs/portfolio/assets/ibce-public-overview-en.png",
+  "source": "Running workspace preview, not the published deployment; published-page browser navigation timed out",
+  "public_reference": "https://hrc.ibios.org/ibios-tools/ibce",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "language": "English",
+  "language_selection": "Existing app language preference hrc-lang=en in a fresh local browser context; no DOM/text replacement",
+  "heading": "IBCE Discovery",
+  "readiness": "Loading status no longer visible at capture; not an independent data verification",
+  "search_value": "",
+  "signed_in": false,
+  "scope": "Public landing only; no login, query submission, API/data mutation or application change",
+  "screenshot": "Unedited viewport capture; researcher requested English view after approving redistribution of the original screenshot"
+}

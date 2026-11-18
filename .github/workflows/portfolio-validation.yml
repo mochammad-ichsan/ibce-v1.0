@@ -1,0 +1,24 @@
+name: Manual portfolio validation
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Read selected public snapshot
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Use Node.js 24 for native TypeScript stripping
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: "24"
+      - name: Check documentation and preserved files
+        run: python3 scripts/validate-portfolio.py
+      - name: Run isolated synthetic demonstration
+        run: node examples/synthetic-survival-demo.mjs
+      - name: Run existing Kaplan-Meier boundary tests
+        run: node --test artifacts/ibios-tools/src/pages/ibios-tools/ibce/km-analysis.test.mjs
